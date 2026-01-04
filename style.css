@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* html,body{
+    overflow-x: hidden;
+
+} */
+
+.font16 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.font18 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+
+.font20 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.font24 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+
+
+
+/* footer */
+footer {
+    background: #000000;
+    margin: 0 auto;
+    padding: 80px 10px 40px 10px;
+}
+
+.footer-main-div {
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px
+}
+
+.f-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 232px;
+}
+
+.f-logo {
+    width: 85px;
+}
+
+.f-c {
+    margin-bottom: 12px;
+}
+
+.links-market{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+
+.logs-links-div {
+    display: flex;
+    gap: 170px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.logs-div,.links-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logs,
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link {
+    list-style: none;
+}
+
+.f-market{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo-c-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 356px;
+}
+
+
+.f-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+
+}
+
+.web{
+    position: relative;
+    z-index: 4;
+}
+
+.f-usa-div {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #24806F;
+    border-radius: 24px;
+    padding: 59px 36px;
+    margin-top: -28px;
+    z-index: 5;
+}
+
+.f-us-content {
+    width: 332px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
