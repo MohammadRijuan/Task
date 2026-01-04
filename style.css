@@ -12,7 +12,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4em;
-    letter-spacing: 0%;
+    letter-spacing: 0em;
     color: #FFFFFF;
 }
 
@@ -28,7 +28,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4em;
-    letter-spacing: 0%;
+    letter-spacing: 0em;
     color: #FFFFFF;
 }
 
@@ -36,11 +36,44 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 1.4em;
-    letter-spacing: 0%;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+.font64 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0em;
     color: #FFFFFF;
 }
 
+/* control brand*/
+.control-brand{
+    margin: 140px 0 80px 0;
+    max-width: 1260px;
+    padding: 76px 32px 93px 32px;
+    background-color: #24806F;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
 
+.control-title{
+    width: 1114px;
+}
+
+.control-p-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.control-para{
+    width: 461px;
+}
+.btns-div{
+    display: flex;
+    gap: 16px;
+}
 
 
 /* footer */
@@ -77,7 +110,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 60px;
-
 }
 
 .logs-links-div {
