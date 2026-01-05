@@ -39,6 +39,14 @@
     letter-spacing: 0em;
     color: #FFFFFF;
 }
+.font48 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+
 .font64 {
     font-size: 64px;
     font-weight: 500;
@@ -47,30 +55,128 @@
     color: #FFFFFF;
 }
 
+/* design tools */
+.design-tools{
+    background-color: #000000;
+    padding: 80px 10px;
+}
+.design-main-div{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.design-title{
+    max-width: 590px;
+}
+
+.design-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 24px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    width: 624px;
+}
+.design-card-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 24px;
+    background-color: transparent;
+    border-radius: 16px;
+    border: 1PX SOLID #FFFFFF;
+}
+
+.design-card-div{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.card-container-1,.card-container-2,.card-con-2{
+    display: flex;
+
+    gap: 24px;
+}
+.card-con-2{
+    max-width: 592px;
+}
+
+
+.card-title{
+    max-width: 460px;
+    font-weight: 500;
+    color: #000000;
+}
+.card-title-1{
+    font-weight: 500;
+    color: #FFFFFF !important ;
+}
+
+.icon-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 78px;
+}
+
+.icon,.more{
+    cursor: pointer;
+    text-decoration: none;
+    color: #24806F;
+}
+
+
+/* creative */
+.creative-container{
+    margin: 140px auto;
+    max-width: 1240px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.cre-title{
+    color: #000000 !important;
+    text-align: center;
+    width: 582px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
 /* control brand*/
-.control-brand{
-    margin: 140px 0 80px 0;
-    max-width: 1260px;
+.control-brand {
+    margin: 140px auto 80px auto;
+    max-width: 1176px;
     padding: 76px 32px 93px 32px;
     background-color: #24806F;
     display: flex;
     flex-direction: column;
     gap: 44px;
+
 }
 
-.control-title{
+
+
+.control-title {
     width: 1114px;
 }
 
-.control-p-btns{
+.control-p-btns {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.control-para{
+
+.control-para {
     width: 461px;
 }
-.btns-div{
+
+.btns-div {
     display: flex;
     gap: 16px;
 }
@@ -84,7 +190,8 @@ footer {
 }
 
 .footer-main-div {
-    max-width: 1260px;
+    max-width: 1240px;
+    padding: 0 10px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -106,7 +213,7 @@ footer {
     margin-bottom: 12px;
 }
 
-.links-market{
+.links-market {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -118,7 +225,9 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
 }
-.logs-div,.links-div{
+
+.logs-div,
+.links-div {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -135,7 +244,7 @@ footer {
     list-style: none;
 }
 
-.f-market{
+.f-market {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -157,7 +266,7 @@ footer {
 
 }
 
-.web{
+.web {
     position: relative;
     z-index: 4;
 }
