@@ -39,6 +39,7 @@
     letter-spacing: 0em;
     color: #FFFFFF;
 }
+
 .font48 {
     font-size: 48px;
     font-weight: 400;
@@ -56,22 +57,24 @@
 }
 
 /* design tools */
-.design-tools{
+.design-tools {
     background-color: #000000;
     padding: 80px 10px;
 }
-.design-main-div{
+
+.design-main-div {
     max-width: 1240px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.design-title{
+
+.design-title {
     max-width: 590px;
 }
 
-.design-card{
+.design-card {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -80,7 +83,8 @@
     border-radius: 16px;
     width: 624px;
 }
-.design-card-1{
+
+.design-card-1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -90,32 +94,37 @@
     border: 1PX SOLID #FFFFFF;
 }
 
-.design-card-div{
+.design-card-div {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.card-container-1,.card-container-2,.card-con-2{
+
+.card-container-1,
+.card-container-2,
+.card-con-2 {
     display: flex;
 
     gap: 24px;
 }
-.card-con-2{
+
+.card-con-2 {
     max-width: 592px;
 }
 
 
-.card-title{
+.card-title {
     max-width: 460px;
     font-weight: 500;
     color: #000000;
 }
-.card-title-1{
+
+.card-title-1 {
     font-weight: 500;
-    color: #FFFFFF !important ;
+    color: #FFFFFF !important;
 }
 
-.icon-btn{
+.icon-btn {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -123,7 +132,8 @@
     gap: 78px;
 }
 
-.icon,.more{
+.icon,
+.more {
     cursor: pointer;
     text-decoration: none;
     color: #24806F;
@@ -131,7 +141,7 @@
 
 
 /* creative */
-.creative-container{
+.creative-container {
     margin: 140px auto;
     max-width: 1240px;
     padding: 0 10px;
@@ -140,12 +150,51 @@
     gap: 11px;
 }
 
-.cre-title{
+.creative-card-container{
+    display: flex;
+    gap: 32px;
+    align-items: flex-end;
+}
+
+.cre-title {
     color: #000000 !important;
     text-align: center;
     width: 582px;
     margin: 0 auto;
     font-weight: 500;
+}
+
+.cre-card {
+    max-width: 392px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.cre-img {
+    position: relative;
+    z-index: 3;
+}
+
+.cre-card-content {
+    position: relative;
+    z-index: 2;
+    margin-top: -16px;
+    padding: 32px 24px 24px 24px;
+    background-color: #24806F;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 0 0 20px 20px;
+}
+
+.cre-btn {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    padding: 12px 0;
+    cursor: pointer;
 }
 
 /* control brand*/
