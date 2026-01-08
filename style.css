@@ -1248,14 +1248,22 @@ footer {
   }
 
   .design-card {
-    width: 100%;
+
+    width: 84%;
   }
 
   .card-title {
     max-width: 200px;
   }
 
+  .more {
+    text-align: right;
+  }
+
   /* fav project */
+  .fav-content-container {
+    gap: 20px;
+  }
 
   .fav-project {
     margin: 40px 0;
@@ -1265,12 +1273,32 @@ footer {
     width: 100%;
   }
 
+  .fav-content {
+    padding: 10px 0;
+  }
+
   .number {
     padding: 5px;
   }
 
+  .fav-c-1.font20 {
+    font-size: 11px;
+  }
+
+  .fav-c-1 {
+    font-size: 18px;
+  }
+
   .fav-1 {
     gap: 10px;
+  }
+
+  .fav-img {
+    width: 100px;
+  }
+
+  .fav-1.fav-2 img {
+    width: 16px;
   }
 
   /* customer */
@@ -1306,15 +1334,17 @@ footer {
   }
 
   /* template */
-  
+
   .template-container {
-    padding-left:10px;
+    padding-left: 10px;
     flex-direction: column;
   }
-  .temp-content{
+
+  .temp-content {
     max-width: 100%;
   }
-  .template-card{
+
+  .template-card {
     /* width: 100%; */
   }
 
@@ -1342,6 +1372,7 @@ footer {
 
   .btn-3 {
     padding: 4px 6px;
+    white-space: nowrap;
   }
 
   .btn-3 img {
@@ -1396,5 +1427,169 @@ footer {
 
   .copy {
     text-align: right;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .font16 {
+    font-size: 12px;
+  }
+
+  .font18 {
+    font-size: 14px;
+  }
+
+  .font20 {
+    font-size: 15px;
+  }
+
+  .font22 {
+    font-size: 16px;
+  }
+
+  .font24 {
+    font-size: 18px;
+  }
+
+  .font28 {
+    font-size: 20px;
+  }
+
+  .font48 {
+    font-size: 40px;
+  }
+
+  .font64 {
+    font-size: 50px;
+  }
+
+  /* hero */
+  .hero-title{
+    font-size: 60px;
+    width: 100%;
+  }
+  /* design */
+  
+
+  .card-container-1,
+  .card-container-2,
+  .card-con-2 {
+    gap: 12px;
+  }
+  .design-card,.design-card-1{
+    /* align-items: ; */
+  }
+   .card-con-2{
+    max-width: 61%;
+   }
+   .icon{
+    width: 30px;
+   }
+
+  .design-card {
+    width: 84%;
+  }
+
+  .card-title {
+    max-width: 200px;
+  }
+
+  .more {
+    text-align: right;
+  }
+  /* customer */
+  .customer-main-container {
+    flex-direction: column;
+  }
+
+  .customer-c1-c2 {
+    max-width: 100%;
+    gap: 10px;
+    justify-content: start;
+  }
+
+  /* creative */
+  .cre-img {
+    width: 100%;
+  }
+  /* template */
+  .template-container{
+    padding-left: 10px;
+  }
+  .temp-content{
+    width: 415px;
+  }
+
+  /* footer */
+  .f-1,.logs-links-div{
+    gap: 100px;
+  }
+  .f-usa-div{
+    gap: 20px;
+  }
+  .webermelon{
+    width: 100%;
+  }
+
+  
+
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
+  .c-1 h1 {
+    font-size: 50px;
+  }
+
+  .customer-c3-c4 {
+    justify-content: space-between;
+  }
+
+  .c-2 img {
+    width: 100%;
+  }
+
+  /* creative */
+  .cre-img {
+    width: 100%;
+  }
+
+  /* circle */
+  .line {
+    right: 10px;
+  }
+
+  .line1 {
+    right: 280px;
+  }
+
+  .line2 {
+    right: 550px;
+  }
+
+  .complete-project {
+    padding-right: 10px;
+  }
+
+  .circle-img {
+    width: 100%;
+  }
+
+  /* .fruit-img{
+    width: 230px;
+    height: 220px;
+  } */
+  .semi-circle-down {
+    width: 320px;
+    height: 320px;
+    left: -200px;
+  }
+
+  .fruit-list {
+    padding-right: 20px;
+  }
+
+  .fruit-list li {
+    font-size: 12px;
   }
 }
