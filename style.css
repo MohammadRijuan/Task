@@ -3,11 +3,17 @@
 
 :root {
   --font-main: "Poppins", sans-serif;
+  --font-white:#ffffff;
+  --font-black:#000000;
   --font-24-color:#24806F;
   --font-60-color:#606060;
   --font-70-color:#707070;
   --font-A4-color:#A4A4A4;
   --font-ac-bg:#ACEBDF;
+  --font-weight-400:400;
+  --font-weight-500:500;
+  --font-weight-600:600;
+  --font-weight-700:700;
 }
 
 * {
@@ -25,74 +31,74 @@ body {
 /* font style */
 .font12 {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   line-height: 1.4em;
   letter-spacing: 0em;
-  color: #000000;
+  color: var(--font-black);
 }
 
 .font16 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   line-height: 1.4em;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: var(--font-white);
 }
 
 .font18 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   line-height: 1.4em;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: var(--font-white);
 }
 
 .font20 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   line-height: 1.4em;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: var(--font-white);
 }
 
 .font22 {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: var(--font-weight-600);
   line-height: 1.4em;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: var(--font-white);
 }
 
 .font24 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
   line-height: 1.4em;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: var(--font-white);
 }
 
 .font28 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
   line-height: 1.4em;
   /* letter-spacing: -0.3em; */
-  color: #000000;
+  color: var(--font-black);
 }
 
 .font48 {
   font-size: 48px;
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   line-height: 1.4em;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: var(--font-white);
 }
 
 .font64 {
   font-size: 64px;
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
   line-height: 1.4em;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: var(--font-white);
 }
 
 .d-flex-col{
@@ -143,16 +149,16 @@ body {
 }
 
 .nav-items li.active {
-  background-color: #000000;
+  background-color: var(--font-black);
   padding: 8px 24px;
-  color: #ffffff;
+  color: var(--font-white);
   border-radius: 999px;
 }
 
 .btn-bg {
   border: none;
   background-color: #011f11;
-  color: #ffffff;
+  color: var(--font-white);
 }
 
 #menu-toggle {
@@ -173,7 +179,7 @@ body {
 
 .hero-title {
   width: 1052px;
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
   font-size: 128px;
   line-height: 0.85em;
   letter-spacing: -0.06em;
@@ -194,7 +200,7 @@ body {
 
 /* design tools */
 .design-tools {
-  background-color: #000000;
+  background-color: var(--font-black);
   padding: 80px 10px;
 }
 
@@ -213,7 +219,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 16px 24px;
-  background-color: #ffffff;
+  background-color: var(--font-white);
   border-radius: 16px;
   width: 624px;
 }
@@ -225,7 +231,7 @@ body {
   padding: 16px 24px;
   background-color: transparent;
   border-radius: 16px;
-  border: 1px SOLID #ffffff;
+  border: 1px SOLID var(--font-white);
 }
 
 .design-card-div {
@@ -245,13 +251,13 @@ body {
 
 .card-title {
   max-width: 460px;
-  font-weight: 500;
-  color: #000000;
+  font-weight: var(--font-weight-500);
+  color: var(--font-black);
 }
 
 .card-title-1 {
-  font-weight: 500;
-  color: #ffffff !important;
+  font-weight: var(--font-weight-500);
+  color: var(--font-white) !important;
 }
 
 .icon-btn {
@@ -340,7 +346,7 @@ body {
 }
 
 .fav-c-1 {
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   color: var(--font-A4-color);
 }
 
@@ -386,7 +392,7 @@ body {
   padding: 0 0 37px 0;
   /* gap: 52px; */
   border-radius: 40px;
-  border: 1px solid #000000;
+  border: 1px solid var(--font-black);
 }
 
 .c-2-content {
@@ -397,7 +403,7 @@ body {
 .forgot {
   padding: 18px;
   border-radius: 5.47px;
-  color: #ffffff;
+  color: var(--font-white);
   background-color: var(--font-24-color);
 }
 
@@ -430,12 +436,12 @@ body {
 .sub-2-para {
   color: var(--font-60-color);
   padding: 18px;
-  background-color: #ffffff;
+  background-color: var(--font-white);
   border-radius: 5.47px;
 }
 
 .c3 {
-  border: 1px solid #000000;
+  border: 1px solid var(--font-black);
   border-radius: 20px;
   padding: 24px;
 }
@@ -452,7 +458,7 @@ body {
 }
 
 .c4 {
-  background-color: #000000;
+  background-color: var(--font-black);
   padding: 24px;
   border-radius: 20px;
 }
@@ -497,19 +503,19 @@ body {
 }
 
 .percent {
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 41.92px;
   line-height: 1em;
   letter-spacing: -0.1em;
   text-align: center;
   vertical-align: middle;
-  color: #ffffff;
+  color: var(--font-white);
 }
 
 .conver {
   width: 150px;
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: var(--font-weight-700);
+  color: var(--font-white);
 }
 
 /* creative */
@@ -527,11 +533,11 @@ body {
 }
 
 .cre-title {
-  color: #000000 !important;
+  color: var(--font-black) !important;
   text-align: center;
   width: 582px;
   margin: 0 auto;
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
 }
 
 .cre-card {
@@ -563,7 +569,7 @@ body {
 
 .cre-btn {
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--font-white);
   border-radius: 100px;
   padding: 12px 0;
   cursor: pointer;
@@ -597,13 +603,13 @@ body {
 }
 
 .temp-list {
-  color: #000000;
+  color: var(--font-black);
   padding: 12px 24px;
   list-style: none;
-  border: 1px solid #000000;
+  border: 1px solid var(--font-black);
   border-radius: 100px;
   cursor: pointer;
-  font-weight: 500 !important;
+  font-weight: var(--font-weight-500) !important;
 }
 
 .template-card-container {
@@ -656,11 +662,11 @@ body {
 }
 
 .t-title {
-  font-weight: 600;
+  font-weight: var(--font-weight-600);
 }
 
 .i-c {
-  background-color: #ffffff;
+  background-color: var(--font-white);
   padding: 16px;
   border-radius: 5.17px;
 }
@@ -668,7 +674,7 @@ body {
 .i-c-2 {
   background-color: var(--font-24-color);
   padding: 16px;
-  color: #ffffff;
+  color: var(--font-white);
   border-radius: 5.17px;
 }
 
@@ -683,8 +689,8 @@ body {
   gap: 10px;
   padding: 12px 0;
   border-radius: 100px;
-  background-color: #000000;
-  font-weight: 500;
+  background-color: var(--font-black);
+  font-weight: var(--font-weight-500);
   border: none;
   cursor: pointer;
 }
@@ -728,7 +734,7 @@ body {
   right: 100px;
   height: 100%;
   width: 1px;
-  background-color: #ffffff;
+  background-color: var(--font-white);
 }
 
 .line1 {
@@ -751,18 +757,18 @@ body {
 }
 
 .complete {
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 42px;
   line-height: 1.4em;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: var(--font-white);
   padding-bottom: 13px;
 }
 
 .complete-para {
   font-size: 12px;
   max-width: 326px;
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
 }
 
 .circle-div-content {
@@ -793,9 +799,9 @@ body {
   --fill: 120deg;
   background: conic-gradient(
     from 270deg,
-    #ffffff 0deg,
-    #ffffff 60deg,
-    #ffffff 120deg,
+    var(--font-white) 0deg,
+    var(--font-white) 60deg,
+    var(--font-white) 120deg,
     transparent var(--fill),
     transparent 180deg,
     transparent 240deg,
@@ -833,17 +839,17 @@ body {
 }
 
 .fruit-list li {
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   font-size: 15px;
   line-height: 1.4em;
   letter-spacing: 0em;
   list-style: none;
-  color: #ffffff;
+  color: var(--font-white);
   cursor: pointer;
 }
 
 .fruit-list li.active {
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
 }
 
 .a {
@@ -883,23 +889,23 @@ body {
 }
 
 .f-n {
-  font-weight: 600;
+  font-weight: var(--font-weight-600);
   font-size: 70px;
   line-height: 1.4em;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: var(--font-white);
   text-align: right;
   margin-bottom: -30px;
   font-family: "Inter", sans-serif;
 }
 
 .f-name {
-  font-weight: 600;
+  font-weight: var(--font-weight-600);
   font-size: 14px;
   line-height: 1.4em;
   letter-spacing: 0em;
   text-align: justify;
-  color: #ffffff;
+  color: var(--font-white);
   padding-bottom: 13px;
 }
 
@@ -962,13 +968,13 @@ body {
   gap: 10px;
   padding: 17px 32px;
   background: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--font-white);
   border-radius: 100px;
 }
 
 /* footer */
 footer {
-  background: #000000;
+  background: var(--font-black);
   margin: 0 auto;
   padding: 80px 10px 40px 10px;
 }
@@ -1011,7 +1017,7 @@ footer {
   text-decoration: none;
   color: var(--font-24-color);
   padding: 11.5px 17px 11.5px 50px;
-  background-color: #ffffff;
+  background-color: var(--font-white);
   border-radius: 100px;
   transition: 0.5s;
   display: flex;
@@ -1025,7 +1031,7 @@ footer {
   padding-left: 16px;
   padding-right: 50px;
   background-color: var(--font-24-color);
-  color: #ffffff;
+  color: var(--font-white);
 }
 
 .sliding-btn span {
@@ -1035,7 +1041,7 @@ footer {
   left: 8px;
   border-radius: 100%;
   background-color: var(--font-24-color);
-  color: #ffffff;
+  color: var(--font-white);
   transition: 0.5s;
   display: flex;
   align-items: center;
@@ -1044,7 +1050,7 @@ footer {
 
 .sliding-btn:hover span {
   left: calc(100% - 40px);
-  background-color: #ffffff;
+  background-color: var(--font-white);
   color: var(--font-24-color);
 }
 
@@ -1380,6 +1386,8 @@ footer {
 
   .fruit-img {
     width: 100%;
+    /* height: auto; */
+    /* aspect-ratio: 1/1; */
   }
   .f-n {
     font-size: 50px;
@@ -1401,9 +1409,9 @@ footer {
 
     background: conic-gradient(
       from 270deg,
-      #ffffff 0deg,
-      #ffffff 60deg,
-      #ffffff 120deg,
+      var(--font-white) 0deg,
+      var(--font-white) 60deg,
+      var(--font-white) 120deg,
       transparent var(--fill),
       transparent 360deg
     );
