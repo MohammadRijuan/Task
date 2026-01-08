@@ -779,6 +779,7 @@ body {
   justify-content: end;
   gap: 15px;
   padding-bottom: 30px;
+  padding-right: 10px;
 }
 
 .complete {
@@ -1518,6 +1519,70 @@ footer {
   }
   .temp-content{
     width: 415px;
+  }
+
+  
+  /* circle */
+  .line {
+    right: 10px;
+  }
+  .line2{
+    display: none;
+  }
+  .complete{
+    font-size: 20px;
+  }
+  .complete-para{
+    font-size: 10px;
+  }
+  .fruits>div:nth-child(odd) {
+    margin-left: 0;
+  }
+
+  .line1 {
+    right: 280px;
+  }
+
+  .line2 {
+    right: 550px;
+  }
+
+  .complete-project {
+    padding-right: 10px;
+  }
+
+  .circle-img {
+    width: 100%;
+  }
+
+  .fruit-img{
+    width: 100%;
+   
+  }
+  .semi-circle-down {
+        width: 400px;
+    height: 400px;
+    left: -260px;
+  }
+
+  .fruit-list {
+    padding-right: 20px;
+  }
+
+  .fruit-list li {
+    font-size: 12px;
+  }
+
+  /* control */
+  .control-title{
+    width: 100%;
+  }
+  .btns-div{
+    gap: 0;
+  }
+  .btn-3{
+    padding: 12px;
+    white-space: nowrap;
   }
 
   /* footer */
