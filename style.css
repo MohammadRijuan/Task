@@ -107,9 +107,12 @@ body {
 }
 
 /* navbar */
+header{
+  padding: 0 10px;
+}
 .nav {
   max-width: 1240px;
-  padding: 48px 10px 0 10px;
+  padding: 48px 0px 0 0px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -117,15 +120,16 @@ body {
 }
 
 .nav-items {
-  width: 450px;
-  /* padding: 0 12px; */
+  /* width: 474px; */
+  padding: 0 07px 0 0px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   list-style: none;
   gap: 16px;
   background-color: #ededed;
   border-radius: 999px;
+  box-sizing: border-box;
   
 }
 
@@ -141,7 +145,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 23px;
+  padding: 12px 20px;
   border-radius: 999px;
 }
 .mble-btn{
@@ -1891,6 +1895,10 @@ footer {
   /* navbar */
   .logo img{
     width: 180px;
+  }
+  .nav-items{
+    gap: 10px;
+    width: 360px;
   }
  
 
