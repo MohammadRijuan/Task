@@ -1,67 +1,91 @@
+(() => {
+  const slider = document.querySelector(".template-card-container");
+  const buttons = document.querySelectorAll(".temp-list");
+  const gap = 16;
 
-      const slider = document.querySelector(".template-card-container");
-      let cards = document.querySelectorAll(".template-card");
-      const categoryBtns = document.querySelectorAll(".temp-list");
+  let originalCards = Array.from(slider.children);
+  let currentIndex = 0;
+  let interval;
+  let activeCategory = null; // ⭐ track active category
 
-      const gap = 24;
-      const cardWidth = cards[0].offsetWidth + gap;
+  /* ---------- CLONE 3x ---------- */
+  originalCards.forEach(card => {
+    slider.appendChild(card.cloneNode(true));
+    slider.appendChild(card.cloneNode(true));
+  });
 
-      /* ---------- CLONE first & last ---------- */
-      const firstClone = cards[0].cloneNode(true);
-      const lastClone = cards[cards.length - 1].cloneNode(true);
+  const allCards = Array.from(slider.children);
 
-      slider.appendChild(firstClone);
-      slider.insertBefore(lastClone, cards[0]);
+  function cardWidth() {
+    return allCards[0].offsetWidth + gap;
+  }
 
-      cards = document.querySelectorAll(".template-card");
+  /* ---------- START FROM MIDDLE ---------- */
+  currentIndex = originalCards.length;
+  slider.style.transform = `translateX(-${currentIndex * cardWidth()}px)`;
 
-      let index = 1;
+  function moveTo(index, smooth = true) {
+    slider.style.transition = smooth ? "transform 0.6s ease" : "none";
+    slider.style.transform = `translateX(-${index * cardWidth()}px)`;
+  }
 
-      slider.style.transform = `translateX(-${index * cardWidth}px)`;
+  /* ---------- AUTO SLIDE ---------- */
+  function nextSlide() {
+    currentIndex++;
+    moveTo(currentIndex);
 
-      function move() {
-        slider.style.transition = "transform 0.6s ease";
-        slider.style.transform = `translateX(-${index * cardWidth}px)`;
+    if (currentIndex >= originalCards.length * 2) {
+      setTimeout(() => {
+        currentIndex = originalCards.length;
+        moveTo(currentIndex, false);
+      }, 600);
+    }
+  }
+
+  function startAuto() {
+    stopAuto();
+    interval = setInterval(nextSlide, 3000);
+  }
+
+  function stopAuto() {
+    if (interval) clearInterval(interval);
+  }
+
+  startAuto();
+
+  /* ---------- CATEGORY CLICK (TOGGLE) ---------- */
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const category = btn.dataset.category;
+
+      // 🔁 SAME BUTTON CLICKED → RESUME AUTO
+      if (activeCategory === category) {
+        btn.classList.remove("active");
+        activeCategory = null;
+        startAuto();
+        return;
       }
 
-      /* ---------- AUTO one by one ---------- */
-      let autoSlide = setInterval(() => {
-        index++;
-        move();
-      }, 3000);
+      // 🆕 DIFFERENT BUTTON CLICKED → PAUSE AUTO
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      activeCategory = category;
 
-      /* ---------- FIX jump using clone ---------- */
-      slider.addEventListener("transitionend", () => {
-        if (cards[index].isSameNode(firstClone)) {
-          slider.style.transition = "none";
-          index = 1;
-          slider.style.transform = `translateX(-${index * cardWidth}px)`;
-        }
+      stopAuto();
 
-        if (cards[index].isSameNode(lastClone)) {
-          slider.style.transition = "none";
-          index = cards.length - 2;
-          slider.style.transform = `translateX(-${index * cardWidth}px)`;
-        }
-      });
+      const index = allCards.findIndex(
+        card => card.dataset.category === category
+      );
 
-      /* ---------- CATEGORY CLICK ---------- */
-      categoryBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          clearInterval(autoSlide);
+      if (index !== -1) {
+        currentIndex = index;
+        moveTo(currentIndex);
+      }
+    });
+  });
 
-          const category = btn.dataset.category;
-
-          cards.forEach((card, i) => {
-            if (card.dataset.category === category) {
-              index = i;
-              move();
-            }
-          });
-
-          autoSlide = setInterval(() => {
-            index++;
-            move();
-          }, 3000);
-        });
-      });
+  /* ---------- RESIZE ---------- */
+  window.addEventListener("resize", () => {
+    moveTo(currentIndex, false);
+  });
+})();
