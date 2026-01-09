@@ -9,7 +9,19 @@ const semiCircle = document.querySelector(".semi-circle-down");
 
 
 let currentIndex = 0;
-const sliderHeight = 315;
+
+function getSliderHeight() {
+  if (window.matchMedia("(max-width: 576px)").matches) {
+    return 240;     
+  } 
+  else if (window.matchMedia("(max-width: 768px)").matches) {
+    return 255;       
+  } 
+  else {
+    return 315;    
+  }
+}
+
 
 const bgColors = [
   "#443747",
@@ -26,14 +38,18 @@ function updateArrowOpacity() {
     currentIndex === sliders.length - 1 ? "0.6" : "1";
 }
 
+
 function updateSlider() {
+  const sliderHeight = getSliderHeight();
+
   fruitsContainer.style.transform =
     `translateY(-${currentIndex * sliderHeight}px)`;
 
   completeBg.style.backgroundColor = bgColors[currentIndex];
 
-  const step = 22.5; 
+  const step = 22.5;
   semiCircle.style.setProperty("--fill", `${150 + currentIndex * step}deg`);
+
   setActiveFruit();
   updateArrowOpacity();
 }
@@ -44,7 +60,7 @@ function setActiveFruit() {
   fruitItems[currentIndex].classList.add("active");
 }
 
-/* ⬇️ Fruit list click logic */
+
 fruitItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     currentIndex = index;
@@ -52,7 +68,7 @@ fruitItems.forEach((item, index) => {
   });
 });
 
-/* ⬇️ Arrow buttons */
+
 downBtn.addEventListener("click", () => {
   if (currentIndex < sliders.length - 1) {
     currentIndex++;
