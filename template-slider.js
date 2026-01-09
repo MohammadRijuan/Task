@@ -6,9 +6,9 @@
   let originalCards = Array.from(slider.children);
   let currentIndex = 0;
   let interval;
-  let activeCategory = null; // ⭐ track active category
+  let activeCategory = null;
 
-  /* ---------- CLONE 3x ---------- */
+
   originalCards.forEach(card => {
     slider.appendChild(card.cloneNode(true));
     slider.appendChild(card.cloneNode(true));
@@ -20,7 +20,7 @@
     return allCards[0].offsetWidth + gap;
   }
 
-  /* ---------- START FROM MIDDLE ---------- */
+
   currentIndex = originalCards.length;
   slider.style.transform = `translateX(-${currentIndex * cardWidth()}px)`;
 
@@ -29,7 +29,6 @@
     slider.style.transform = `translateX(-${index * cardWidth()}px)`;
   }
 
-  /* ---------- AUTO SLIDE ---------- */
   function nextSlide() {
     currentIndex++;
     moveTo(currentIndex);
@@ -53,12 +52,12 @@
 
   startAuto();
 
-  /* ---------- CATEGORY CLICK (TOGGLE) ---------- */
+
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
       const category = btn.dataset.category;
 
-      // 🔁 SAME BUTTON CLICKED → RESUME AUTO
+
       if (activeCategory === category) {
         btn.classList.remove("active");
         activeCategory = null;
@@ -66,7 +65,6 @@
         return;
       }
 
-      // 🆕 DIFFERENT BUTTON CLICKED → PAUSE AUTO
       buttons.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       activeCategory = category;
@@ -84,7 +82,6 @@
     });
   });
 
-  /* ---------- RESIZE ---------- */
   window.addEventListener("resize", () => {
     moveTo(currentIndex, false);
   });
