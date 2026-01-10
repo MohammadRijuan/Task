@@ -155,7 +155,7 @@ header {
 .nav-items li.active::before {
   content: "";
   position: absolute;
-  inset: -0px -5px;      
+  inset: -0px -4.5px;      
   background-color: var(--font-black);
   border-radius: 999px;
   z-index: -1;
@@ -171,7 +171,7 @@ header {
 
 .nav-items li.active {
   background-color: var(--font-black);
-  padding: 8px 20px;
+  padding: 8px 20.25px;
   color: var(--font-white);
   border-radius: 999px;
   box-sizing: border-box;
