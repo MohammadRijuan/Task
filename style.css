@@ -240,6 +240,11 @@ header {
   align-items: center;
   cursor: pointer;
 }
+.learn{
+  border: none; 
+  background-color: transparent; 
+  font-family: "Poppins", "sans-serif;"
+}
 
 /* design tools */
 .design-tools {
@@ -690,7 +695,10 @@ header {
   cursor: pointer;
   font-weight: var(--font-weight-500) !important;
 }
-
+.temp-list:hover{
+  background-color: var(--font-black);
+  color: #ffffff;
+}
 .template-card-container {
   display: flex;
   gap: 16px;
@@ -1045,11 +1053,12 @@ header {
 }
 
 .btn-3 {
+  font-family: var(--font-main);
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 500;
-  padding: 16px 38.5px;
+  padding: 16px 33.5px;
   background: transparent;
   border: 1px solid var(--font-white);
   border-radius: 100px;
