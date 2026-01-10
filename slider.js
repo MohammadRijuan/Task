@@ -23,6 +23,7 @@ function getSliderHeight() {
 }
 
 
+
 const bgColors = [
   "#443747",
   "#588c43",
